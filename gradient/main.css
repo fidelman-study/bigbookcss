@@ -1,0 +1,54 @@
+.linear {
+	box-sizing: border-box;
+	margin: 50px;
+	width: 200px;
+	height: 100px;
+	background-image: -webkit-linear-gradient(top, white 0%, white 33%, blue 33%, blue 66%, red 66%);
+	border: 1px solid black;
+	text-align: center;
+	color: black;
+	font-size: 20px;
+	box-shadow: 7px 7px 15px black;
+
+}
+.linear:hover {
+	-webkit-animation: hello 1s linear forwards;
+	
+}
+@keyframes hello{
+	50% {
+		box-shadow: 7px -7px 15px black;
+	}
+	100% {
+		box-shadow: -7px -7px 15px black;
+	}
+}
+
+.radial {
+	margin: 50px;
+	width: 200px;
+	height: 150px;
+	background-color: red;
+	
+}
+.radial::after {
+	width: 200px;
+	height: 150px;
+	content: "";
+	display: block;
+	opacity: 1;
+	/*
+	background-image: -webkit-repeating-linear-gradient(45deg, rgba(0,0,0,.6)  6px, rgba(0,0,0,.6) 12px, transparent 12px, transparent 18px),-webkit-repeating-linear-gradient(135deg, rgba(0,0,0,.6)  6px, rgba(0,0,0,.6) 12px, transparent 12px, transparent 18px);
+	transition: all .6s ease;
+	*/
+	background-image: -webkit-radial-gradient(
+	10px 10px	,circle closest-corner,black, transparent), -webkit-radial-gradient(
+	40px 40px	,circle closest-corner,black, transparent),-webkit-radial-gradient(
+	70px 70px	,circle closest-corner,black, transparent);
+
+}
+.radial:hover::after {
+	opacity: 0;
+}
+
+

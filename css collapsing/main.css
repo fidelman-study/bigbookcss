@@ -1,0 +1,25 @@
+div:first-child{
+	width:200px;
+	height: 200px;
+	background: red;
+	margin-bottom: 40px;
+}
+
+div:nth-child(2){
+	box-sizing: border-box;
+	margin-top: 50px; /* наложение отступов */
+	width:200px;
+	height: 200px;
+	background: green;
+	padding: 10px;
+}
+/*
+div:last-child{
+	width:200px;
+	height: 200px;
+	background: black;
+}
+*/
+h1 {
+	margin: 0;
+}

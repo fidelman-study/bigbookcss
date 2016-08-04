@@ -1,0 +1,23 @@
+input:focus {
+	box-shadow: 5px 5px 5px rgba(0,0,0,.6);
+}
+p::selection {
+	color:red;
+	background: blue;
+}
+p[title="Минзакиры"] {
+	color:yellow;
+}
+p[title^="И"] { /* поиск тега имующий такой аттрибут*/
+	color:red; /*начинается*/
+}
+p[title$="инзакир"] { /* поиск тека имующий такой аттрибут*/
+	color:blue;/*конается*/
+}
+
+p[title*="HOW"] {
+	color:green;
+}
+p:first-child {
+	font-size: 2em;
+}

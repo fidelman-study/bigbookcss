@@ -1,0 +1,14 @@
+div {
+	background-color: red;
+}
+img {
+	max-width: 30%;
+}
+@media screen and (max-width: 600px) {
+	img {
+		max-width: 100%;
+	}
+	div {
+		background-color: yellow;
+	}
+}
